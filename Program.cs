@@ -9,6 +9,7 @@ namespace csharp_db_connection // Note: actual namespace depends on the project 
             Console.WriteLine("Hello World!");
 
             string stringaDiConnesione = "Data Source=localhost;Initial Catalog=biblioteca;Integrated Security=True;Pooling=False";
+            
             using (SqlConnection conn = new SqlConnection(stringaDiConnesione))
             {
                 conn.Open();
